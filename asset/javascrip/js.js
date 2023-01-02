@@ -56,9 +56,13 @@ dotsBlogs.forEach((dot, index) => {
     document.querySelector(".blogdot.active").classList.remove("active");
     dot.classList.add("active");
     blogItem.forEach((item) => {
-      item.style.transform = `translateX(calc(-${index * 300}% - ${
-        index * 90
-      }px))`;
+      // item.style.transform = `translateX(calc(-${index * 300}% - ${
+      //   index * 90
+      // }px))`;
+      let widthContainer = document.querySelector(".container").offsetWidth;
+      item.style.transform = `translateX(-${
+        index * widthContainer + index * 30
+      }px)`;
     });
   });
 });
