@@ -72,6 +72,9 @@
     display: none;
     animation: showbart 0.5s forwards;
   }
+  .nav.hide {
+    display: block;
+  }
 
   @keyframes showbart {
     from {

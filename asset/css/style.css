@@ -362,7 +362,7 @@ body {
   transition: 0.2s;
 }
 .populer .course-list::-webkit-scrollbar {
-  display: none;
+  display: none !important;
 }
 
 .populer .course-item {

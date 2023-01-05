@@ -4,9 +4,7 @@ navItem.forEach((item) => {
   item.addEventListener("click", () => {
     document.querySelector(".nav ul li.active").classList.remove("active");
     item.classList.add("active");
-    if (document.querySelector(".close")) {
-      nav.style.display = "none";
-    }
+    nav.classList.remove("hide");
   });
 });
 // ================================== end active nav ========================================
@@ -17,11 +15,11 @@ var menu = document.querySelector(".menu i");
 var close = document.querySelector(".close");
 var nav = document.querySelector(".nav");
 menu.addEventListener("click", () => {
-  nav.style.display = "block";
+  nav.classList.add("hide");
 });
 
 close.addEventListener("click", () => {
-  nav.style.display = "none";
+  nav.classList.remove("hide");
 });
 
 // ====================end menu ==============================
