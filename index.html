@@ -11,10 +11,17 @@
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800;900&family=Sen:wght@400;700;800&display=swap"
             rel="stylesheet">
 
+        <!-- ====================== icon=================== -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- =================== reset css ===================== -->
         <link rel="stylesheet" type="" href="./asset/css/reset.css">
         <!-- ========================= css ==================== -->
         <link rel="stylesheet" href="./asset/css/style.css">
+        <!-- =============================== responsite================ -->
+        <link rel="stylesheet" href="./asset/css/responsite.css">
 
     </head>
     <body>
@@ -28,6 +35,9 @@
                         <!-- ===================== nav ============ -->
                         <nav class="nav">
                             <ul>
+                                <li class="close">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </li>
                                 <li class="active">
                                     <a href="#">Home</a>
                                 </li>
@@ -35,17 +45,21 @@
                                     <a href="#Courses">Courses</a>
                                 </li>
                                 <li>
-                                    <a href="#!">Pricing</a>
+                                    <a href="#features">Pricing</a>
                                 </li>
                                 <li>
-                                    <a href="#!">Reviews</a>
+                                    <a href="#blog">Reviews</a>
                                 </li>
                             </ul>
                         </nav>
                         <!-- ====================== action============ -->
                         <div class="action">
                             <a href="#" class="btn sign-up-btn">Sign up</a>
+                            <div class="menu">
+                                <i class="fa-solid fa-bars"></i>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </header>
@@ -442,14 +456,14 @@
                     </div>
 
                     <!-- ========================== features============== -->
-                    <div class="features">
+                    <div id="features" class="features">
                         <div class="container">
                             <div class="body">
                                 <div class="images">
-                                    <img
+                                    <img class="image-mobile"
                                         src="./asset/image/photo-1672426432092-70414facd101.jpg"
                                         alt="">
-                                    <img
+                                    <img class="image-mobile"
                                         src="./asset/image/premium_photo-1664374288503-e404da616aba.jpg"
                                         alt="">
                                 </div>
@@ -492,7 +506,7 @@
                     </div>
 
                     <!-- =============================== blog ============== -->
-                    <div class="blog">
+                    <div id="blog" class="blog">
                         <div class="container">
                             <!-- =================== blog top========== -->
                             <div class="blog-top">
@@ -680,6 +694,8 @@
                                 <span class="blogdot active"></span>
                                 <span class="blogdot"></span>
                                 <span class="blogdot"></span>
+                                <span class="blogdot"></span>
+
                             </div>
                         </div>
                     </div>

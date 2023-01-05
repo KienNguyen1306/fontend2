@@ -4,10 +4,27 @@ navItem.forEach((item) => {
   item.addEventListener("click", () => {
     document.querySelector(".nav ul li.active").classList.remove("active");
     item.classList.add("active");
+    if (document.querySelector(".close")) {
+      nav.style.display = "none";
+    }
   });
 });
 // ================================== end active nav ========================================
 
+// ==================== manu =====================
+
+var menu = document.querySelector(".menu i");
+var close = document.querySelector(".close");
+var nav = document.querySelector(".nav");
+menu.addEventListener("click", () => {
+  nav.style.display = "block";
+});
+
+close.addEventListener("click", () => {
+  nav.style.display = "none";
+});
+
+// ====================end menu ==============================
 // ========================== slide feefback=================
 var feefbackItems = document.querySelectorAll(".feefback-item");
 var dot1 = document.querySelectorAll(".dot1");
@@ -48,6 +65,7 @@ btnPrev.addEventListener("click", () => {
 });
 // ==================== end populer slide ===============
 
+// ========================= blog slide=====================
 var dotsBlogs = document.querySelectorAll(".blogdot");
 var blogItem = document.querySelectorAll(".blog-item");
 
@@ -66,3 +84,5 @@ dotsBlogs.forEach((dot, index) => {
     });
   });
 });
+
+// =========================== end blog ===========================

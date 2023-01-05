@@ -90,6 +90,20 @@ body {
 .nav {
   margin-left: auto;
 }
+.nav .close {
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 28px;
+  text-align: center;
+  color: #5f5b53;
+  text-decoration: none;
+  padding: 8px 21px;
+  display: none;
+}
+.nav .close i {
+  cursor: pointer;
+}
+
 .nav ul {
   display: flex;
 }
@@ -129,6 +143,13 @@ body {
 
 .header .sign-up-btn {
   min-width: 114px;
+}
+
+.menu {
+  font-size: 3rem;
+  margin-left: auto;
+  display: none;
+  cursor: pointer;
 }
 
 /* hero */
@@ -352,7 +373,7 @@ body {
   transition: 0.2s;
   cursor: pointer;
   flex-shrink: 0;
-  /* transform: translateX(calc(-100% - 30px)); */
+  scroll-snap-align: start;
 }
 .populer .course-item:hover {
   border-color: transparent;
@@ -681,8 +702,12 @@ body {
   display: flex;
   gap: 15px;
   margin: 0 auto;
-  width: 80px;
+  width: 90%;
+  justify-content: center;
   margin-top: 38px;
+}
+.blog .docts span:last-child {
+  display: none;
 }
 
 .blog .docts span {
@@ -705,6 +730,7 @@ body {
 
 .footer .footer-row {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .footer-column .heading {
@@ -770,7 +796,7 @@ body {
 }
 
 .footer .spares {
-  width: 1170px;
+  width: 100%;
   height: 1px;
   background-color: #59554b;
   margin-top: 38px;
