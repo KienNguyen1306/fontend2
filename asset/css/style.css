@@ -465,6 +465,7 @@ body {
   flex-shrink: 0;
   width: 100%;
   transition: 0.3s;
+  scroll-snap-align: start;
 }
 
 .feefback-item .avatar {

@@ -194,4 +194,10 @@
   .populer .controls {
     display: none;
   }
+  .feedback-list {
+    overflow-x: scroll;
+  }
+  .feedback-list::-webkit-scrollbar {
+    display: none !important;
+  }
 }
