@@ -141,6 +141,10 @@ body {
   margin-left: 49px;
 }
 
+.mobile-btn {
+  display: none;
+}
+
 .header .sign-up-btn {
   min-width: 114px;
 }

@@ -78,9 +78,11 @@
 
   @keyframes showbart {
     from {
+      opacity: 0;
       transform: translateY(-100%);
     }
     to {
+      opacity: 1;
       transform: translateY(0);
     }
   }
@@ -103,14 +105,31 @@
   .nav ul li a {
     color: #fff;
   }
+  .nav ul li {
+    padding: 20px 0;
+  }
   .menu {
     display: block;
+  }
+  .header .action .sign-up-btn {
+    display: none;
   }
   .header .action {
     margin-left: auto;
     display: flex;
     align-items: center;
     gap: 30px;
+  }
+
+  .mobile-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .mobile-btn .sign-up-btn {
+    background-color: aquamarine;
+    color: black;
   }
 
   .hero .body {

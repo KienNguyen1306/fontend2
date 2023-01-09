@@ -22,6 +22,11 @@ close.addEventListener("click", () => {
   nav.classList.remove("hide");
 });
 
+window.addEventListener('scroll',()=>{
+  nav.classList.remove("hide");
+
+})
+
 // ====================end menu ==============================
 // ========================== slide feefback=================
 var feefbackItems = document.querySelectorAll(".feefback-item");
